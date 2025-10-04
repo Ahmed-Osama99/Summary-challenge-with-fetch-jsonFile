@@ -1,0 +1,200 @@
+:root {
+  /* ### Primary */
+  --light-red: hsl(0, 100%, 67%);
+  --orangey-yellow: hsl(39, 100%, 56%);
+  --green-teal: hsl(166, 100%, 37%);
+  --cobalt-blue: hsl(234, 85%, 45%);
+  /* ## Gradients */
+  /* (background) */
+  --light-slate-blue: hsl(252, 100%, 67%);
+  --light-royal-blue: hsl(241, 81%, 54%);
+  /* (circle) */
+  --violet-blue: hsla(256, 72%, 46%, 1);
+  --persian-blue: hsla(241, 72%, 46%, 0);
+  /* ### Neutral */
+  --white: hsl(0, 0%, 100%);
+  --pale-blue: hsl(221, 100%, 96%);
+  --light-lavender: hsl(241, 100%, 89%);
+  --dark-gray-blue: hsl(224, 30%, 27%);
+}
+/* Base style */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 500;
+  background-color: var(--pale-blue);
+}
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+/* Components */
+.container {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  background-color: var(--white);
+}
+.container > div {
+  padding: 1.5rem;
+}
+.your-result {
+  background-image: linear-gradient(
+    to top right,
+    var(--light-royal-blue),
+    var(--light-slate-blue)
+  );
+  text-align: center;
+  color: var(--light-lavender);
+  border-radius: 0 0 30px 30px;
+}
+.your-result .result {
+  width: 45%;
+  aspect-ratio: 1/1;
+  background-image: linear-gradient(
+    to top,
+    var(--persian-blue),
+    var(--violet-blue)
+  );
+  /* margin-block: 1rem;
+  margin-inline: auto; */
+  margin: 1rem auto;
+  padding: 2rem;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.your-result .result .end-result {
+  color: var(--white);
+  font-size: 3rem;
+  font-weight: 600;
+}
+.your-result .result .total {
+  font-size: 0.85rem;
+  color: var(--light-lavender);
+}
+.your-result > span {
+  color: var(--white);
+  font-size: 1.5rem;
+}
+.your-result > p {
+  margin: 1rem auto;
+  max-width: 30ch;
+}
+
+.summary h4 {
+  color: var(--dark-gray-blue);
+}
+.summary > div,
+.continue {
+  width: 100%;
+}
+.summary > div {
+  margin-block: 1rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  border-radius: 10px;
+}
+.summary .category {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.summary .reaction {
+  background-color: hsla(0, 100%, 67%, 0.06);
+}
+.summary .reaction .category {
+  color: var(--light-red);
+}
+.summary .memory {
+  background-color: hsla(39, 100%, 56%, 0.06);
+}
+.summary .memory .category {
+  color: var(--orangey-yellow);
+}
+.summary .verbal {
+  background-color: hsla(166, 100%, 37%, 0.06);
+}
+.summary .verbal .category {
+  color: var(--green-teal);
+}
+.summary .visual {
+  background-color: hsla(234, 85%, 45%, 0.06);
+}
+.summary .visual .category {
+  color: var(--cobalt-blue);
+}
+.summary .sum-score .score {
+  color: var(--dark-gray-blue);
+  font-weight: 700;
+}
+.summary .sum-score .total {
+  color: #979595;
+}
+.continue {
+  background-color: var(--dark-gray-blue);
+  color: var(--white);
+  text-decoration: none;
+  display: block;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 30px;
+  transition: background-color 0.3s;
+}
+.continue:hover {
+  background-color: hsl(224.4, 50%, 21.2%);
+}
+.attribution {
+  color: var(--dark-gray-blue);
+  font-size: 0.75rem;
+  text-align: center;
+  margin-block: 1rem;
+}
+.attribution a {
+  color: hsl(224.4, 50%, 21.2%);
+  text-decoration: none;
+  font-weight: 600;
+}
+/* media queries */
+@media screen and (min-width: 30em) {
+  main {
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+  .container {
+    width: 90%;
+    border-radius: 30px;
+  }
+  .your-result {
+    border-radius: 30px;
+  }
+}
+@media screen and (min-width: 43em) {
+  .container {
+    display: flex;
+  }
+  .your-result .result {
+    width: 70%;
+  }
+  .summary-section {
+    flex: 1;
+    padding: 2;
+  }
+  .summary > div,
+  .continue {
+    max-width: 250px;
+    margin-inline: auto;
+  }
+  .your-result > p {
+    max-width: 25ch;
+    margin-block: 2rem 0;
+  }
+}
