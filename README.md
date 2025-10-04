@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL](https://your-solution-url.com)
-- Live Site URL: [Live site URL](https://your-live-site-url.com)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/mobile-first-summary-results-by-fetching-datajson-4EgzrwQdql)
+- Live Site URL: [Live site URL](https://ahmed-osama99.github.io/Summary-challenge-with-fetch-jsonFile/)
 
 ## My process
 
@@ -61,7 +61,6 @@ fetchScores();
 
 - [Elzero web school - Increase numbers](https://www.youtube.com/watch?v=PLsUdgLnzgQ&list=PLDoPjvoNmBAycCXz5d9WvqlmykUIys5e8&index=14) - This helped me for remembering how make number increase into specific end. I really liked this pattern and will use it going forward.
 - [Elzero web school - fetch API](https://www.youtube.com/watch?v=wZ90BnBbRsg&list=PLDoPjvoNmBAycCXz5d9WvqlmykUIys5e8&index=4&pp=iAQB) - his helped me for remembering how fetch data.json or any API. I'd recommend it to anyone still learning this concept.
-
 
 ## Author
 
