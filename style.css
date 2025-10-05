@@ -186,7 +186,7 @@ main {
   }
   .summary-section {
     flex: 1;
-    padding: 2;
+    padding: 2rem;
   }
   .summary > div,
   .continue {

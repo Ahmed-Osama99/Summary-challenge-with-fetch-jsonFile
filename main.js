@@ -1,10 +1,6 @@
 const DOM = {
   endScore: document.querySelector(".end-result"),
   summaryContainer: document.querySelector(".summary"),
-  //   reactionScore: document.querySelector(".reaction .score"),
-  //   memoryScore: document.querySelector(".memory .score"),
-  //   verbalScore: document.querySelector(".verbal .score"),
-  //   visualScore: document.querySelector(".visual .score"),
 };
 
 async function fetchScores() {
@@ -17,7 +13,7 @@ async function fetchScores() {
       finalScore += element.score;
       createSummary(element);
     });
-    let averageScore = finalScore / result.length;
+    const averageScore = finalScore / result.length;
     startCount(DOM.endScore, averageScore);
   } catch (error) {
     console.log(error);
